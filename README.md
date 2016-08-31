@@ -14,9 +14,8 @@ Q (state, action) {
 ## Neural Networks (agents. A variation is called convolutional networks):
 * Translate real-world data (images, sounds, text, time-series etc.) into vectors
 * Recognize patterns in these vectors, numerically
-* Group unlabeled data according to similarities among example inputs, and
-* They classify data when they have a labeled dataset to train on
-
+* They group unlabeled data according to similarities among example inputs, and
+* classify data when they have a labeled dataset to train on
 * **In supervised learning:** A NN will label the input parameters. E.g., is this given image a face or not
 * **In reinforcement learning:** A NN can take possible “legal” actions and rate them with a weight for success in achieving in the final goal
 
