@@ -5,6 +5,7 @@ from PIL import Image
 import argparse
 import numpy
 import os.path
+import pdb
 
 # Import data
 from tensorflow.examples.tutorials.mnist import input_data
@@ -93,7 +94,7 @@ def main(_):
   stop = ""
   while stop == "":
     filename = raw_input("Enter an input image file: ").strip()
-    image = Image.open(filename).convert('I')
+    image = Image.open(filename)
     image.show()
     image_arr = numpy.divide(numpy.mod(numpy.asarray(image), 255), 255.0).ravel()
     print (image_arr)
